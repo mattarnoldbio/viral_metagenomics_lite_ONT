@@ -1,0 +1,14 @@
+.nextflow*
+work/
+data/
+results/
+.DS_Store
+testing/
+testing*
+*.pyc
+null/
+.lineage/
+*html
+execution_trace*
+params_2026*
+assets/blastdb/*

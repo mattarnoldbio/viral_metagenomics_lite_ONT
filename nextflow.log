@@ -1,0 +1,213 @@
+Nov-04 17:06:16.360 [main] DEBUG nextflow.cli.Launcher - $> nextflow run -profile docker --input ./assets/testdata/ont_mock/samplesheet.csv --outdir ./results ./ -resume --diamond_db /Users/arno01m/GitHub_repos/viral_metagenomics_lite_ONT/assets/blastdb/dummy --krona_db /Users/arno01m/db/krona/taxonomy
+Nov-04 17:06:16.429 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 26.04.3
+Nov-04 17:06:16.447 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/Users/arno01m/.nextflow/plugins; core-plugins: nf-amazon@3.9.1,nf-azure@1.22.5,nf-cloudcache@0.6.0,nf-codecommit@0.5.2,nf-console@1.3.0,nf-google@1.27.3,nf-k8s@1.5.4,nf-seqera@0.20.1,nf-tower@1.28.0,nf-wave@1.21.0
+Nov-04 17:06:16.462 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Nov-04 17:06:16.463 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Nov-04 17:06:16.465 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.14.1 in 'deployment' mode
+Nov-04 17:06:16.476 [main] DEBUG nextflow.util.RetryConfig - Missing nextflow session - using default retry config
+Nov-04 17:06:16.548 [main] DEBUG nextflow.plugin.PluginUpdater - Using plugin repository: HttpPluginRepository [registry]; url=https://registry.nextflow.io/api
+Nov-04 17:06:16.552 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Nov-04 17:06:16.568 [main] DEBUG nextflow.scm.AssetManager - Selecting multi-revision strategy
+Nov-04 17:06:16.578 [main] DEBUG nextflow.config.ConfigParserFactory - Using config parser v2
+Nov-04 17:06:16.892 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /Users/arno01m/GitHub_repos/viral_metagenomics_lite_ONT/nextflow.config
+Nov-04 17:06:16.894 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /Users/arno01m/GitHub_repos/viral_metagenomics_lite_ONT/nextflow.config
+Nov-04 17:06:16.895 [main] DEBUG nextflow.config.ConfigParserFactory - Using config parser v2
+Nov-04 17:06:16.907 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `docker`
+Nov-04 17:06:17.558 [main] DEBUG nextflow.config.ConfigBuilder - Available config profiles: [debug, conda, mamba, docker, arm64, emulate_amd64, singularity, podman, shifter, charliecloud, apptainer, wave, gpu, abims, adcra, alice, alliance_canada, apollo, arcc, aws_tower, awsbatch, azurebatch, bi, bigpurple, bih, binac2, biohpc_gen, biowulf, bluebear, cambridge, cannon, cbe, ccga_dx, ccga_cau, ceci_dragon2, ceci_nic5, cedars, ceres, cfc, cfc_dev, cheaha, computerome, create, crg, crick, cropdiversityhpc, crukmi, csiro_petrichor, czbiohub_aws, daisybio, denbi_qbic, dkfz, dirac, ebc, eddie, ebi_codon, ebi_codon_slurm, einstein, embl_hd, engaging, ethz_euler, eva, eva_grace, fgcz, fred_hutch, fsu_draco, fub_curta, genotoul, genouest, giga, gis, googlebatch, hasta, hazel, hki_genie, hypatia, humantechnopole, icr_alma, ifb_core, imb, imperial, incliva, ipop_up, iris, janelia, jax, jex, unsw_katana, ku_sund_danhead, kaust, kelvin2, ki_luria, leicester, lovelace, lrz_cm4, lugh, m3c, maestro, mahuika, mana, marjorie, marvin, mccleary, mcw_rcc, medair, mjolnir_globe, mpcdf, mpcdf_viper, mssm, munin, naiss, nci_gadi, nu_genomics, nygc, nyu_hpc, oist, palmetto, pasteur, pawsey_setonix, pdc_kth, phoenix, psmn, purdue_bell, purdue_gautschi, purdue_negishi, qmul_apocrita, rki, rosalind, rosalind_uge, roslin, saga_sigma2, sage, sahmri, sanger, ilifu, seadragon, seattlechildrens, seawulf, seg_globe, self_hosted_runner, shu_bmrc, stjude, tes, tigem, tubingen_apg, tufts, tuos_stanage, ucd_sonic, ucl_cscluster, ucl_myriad, uct_hpc, uge, unc_lccc, unc_longleaf, unibe_ibu, unity, uod_hpc, uppmax, utd_juno, uw_hyak_pedslabs, uzh, uzl_omics, vai, verily_workbench, vsc_calcua, vsc_kul_uhasselt, vsc_ugent, wehi, xanadu, york_viking]
+Nov-04 17:06:17.586 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins declared=[nf-schema@2.5.1]
+Nov-04 17:06:17.587 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Nov-04 17:06:17.587 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[nf-schema@2.5.1]
+Nov-04 17:06:17.588 [main] DEBUG nextflow.plugin.PluginUpdater - Installing plugin nf-schema version: 2.5.1
+Nov-04 17:06:17.598 [main] INFO  org.pf4j.AbstractPluginManager - Plugin 'nf-schema@2.5.1' resolved
+Nov-04 17:06:17.598 [main] INFO  org.pf4j.AbstractPluginManager - Start plugin 'nf-schema@2.5.1'
+Nov-04 17:06:17.603 [main] DEBUG nextflow.plugin.BasePlugin - Plugin started nf-schema@2.5.1
+Nov-04 17:06:17.609 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /Users/arno01m/.nextflow/secrets/store.json
+Nov-04 17:06:17.610 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@57fdb8a4] - activable => nextflow.secret.LocalSecretsProvider@57fdb8a4
+Nov-04 17:06:17.621 [main] DEBUG nextflow.cli.CmdRun - Launching `./main.nf` [confident_torricelli] - revision: ff76b1446e
+Nov-04 17:06:17.623 [main] ERROR org.pf4j.AbstractExtensionFinder - Different class loaders: 'org.pf4j.PluginClassLoader@601eb4af' (E) and 'jdk.internal.loader.ClassLoaders$AppClassLoader@764c12b6' (EP)
+Nov-04 17:06:17.640 [main] WARN  nextflow.config.ConfigValidator - Unrecognized config option 'validation.defaultIgnoreParams'
+Nov-04 17:06:17.641 [main] WARN  nextflow.config.ConfigValidator - Unrecognized config option 'validation.monochromeLogs'
+Nov-04 17:06:17.676 [main] DEBUG nextflow.Session - Session UUID: 99ea949c-d261-458c-b042-9e53d0694d0b
+Nov-04 17:06:17.676 [main] DEBUG nextflow.Session - Run name: confident_torricelli
+Nov-04 17:06:17.677 [main] DEBUG nextflow.Session - Executor pool size: 10
+Nov-04 17:06:17.683 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Nov-04 17:06:17.686 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=30; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Nov-04 17:06:17.708 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 26.04.3 build 12259
+  Created: 28-05-2026 08:48 UTC (09:48 BST)
+  System: Mac OS X 26.5.2
+  Runtime: Groovy 4.0.31 on OpenJDK 64-Bit Server VM 21.0.11+10-b1163.116
+  Encoding: UTF-8 (UTF-8)
+  Process: 85010@Matts-MBP.local [127.0.0.1]
+  CPUs: 10 - Mem: 32 GB (100.9 MB) - Swap: 1 GB (312.6 MB)
+Nov-04 17:06:17.724 [main] DEBUG nextflow.Session - Work-dir: /Users/arno01m/GitHub_repos/viral_metagenomics_lite_ONT/work [Mac OS X]
+Nov-04 17:06:17.724 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /Users/arno01m/GitHub_repos/viral_metagenomics_lite_ONT/bin
+Nov-04 17:06:17.731 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Nov-04 17:06:17.737 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
+Nov-04 17:06:17.738 [main] DEBUG nextflow.Session - Observer factory (v2): DefaultObserverFactory
+Nov-04 17:06:17.747 [main] DEBUG nextflow.Session - Observer factory (v2): ValidationObserverFactory
+Nov-04 17:06:17.761 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Nov-04 17:06:17.766 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 11; maxThreads: 1000
+Nov-04 17:06:17.817 [main] DEBUG nextflow.Session - Session start
+Nov-04 17:06:17.822 [main] DEBUG nextflow.trace.TraceFileObserver - Workflow started -- trace file: ./results/pipeline_info/execution_trace_2026-11-04_17-06-16.txt
+Nov-04 17:06:17.823 [main] DEBUG nextflow.script.ScriptLoaderFactory - Using script parser v2
+Nov-04 17:06:19.006 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Nov-04 17:06:19.102 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [paramsSummaryMap:paramsSummaryMap]; plugin Id: nf-schema
+Nov-04 17:06:19.108 [main] DEBUG n.validation.config.ValidationConfig - Set `validation.monochromeLogs` to false
+Nov-04 17:06:19.108 [main] DEBUG n.validation.config.ValidationConfig - Added the following parameters to the ignored parameters: [genomes]
+Nov-04 17:06:19.120 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [paramsSummaryLog:paramsSummaryLog]; plugin Id: nf-schema
+Nov-04 17:06:19.128 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [validateParameters:validateParameters]; plugin Id: nf-schema
+Nov-04 17:06:19.129 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [paramsHelp:paramsHelp]; plugin Id: nf-schema
+Nov-04 17:06:19.130 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [paramsSummaryMap:paramsSummaryMap]; plugin Id: nf-schema
+Nov-04 17:06:19.130 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [samplesheetToList:samplesheetToList]; plugin Id: nf-schema
+Nov-04 17:06:19.131 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [paramsHelp:paramsHelp]; plugin Id: nf-schema
+Nov-04 17:06:19.134 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [paramsSummaryMap:paramsSummaryMap]; plugin Id: nf-schema
+Nov-04 17:06:19.134 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [samplesheetToList:samplesheetToList]; plugin Id: nf-schema
+Nov-04 17:06:19.134 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [paramsHelp:paramsHelp]; plugin Id: nf-schema
+Nov-04 17:06:19.199 [main] INFO  nextflow.Nextflow - 
+Nov-04 17:06:19.221 [main] INFO  nextflow.Nextflow - [1mInput/output options[0m
+  [0;34minput              : [0;32m./assets/testdata/ont_mock/samplesheet.csv[0m
+  [0;34moutdir             : [0;32m./results[0m
+  [0;34mdiamond_db         : [0;32m/Users/arno01m/GitHub_repos/viral_metagenomics_lite_ONT/assets/blastdb/dummy[0m
+  [0;34mkrona_db           : [0;32m/Users/arno01m/db/krona/taxonomy[0m
+
+[1mGeneric options[0m
+  [0;34mtrace_report_suffix: [0;32m2026-11-04_17-06-16[0m
+
+[1mCore Nextflow options[0m
+  [0;34mrunName            : [0;32mconfident_torricelli[0m
+  [0;34mcontainerEngine    : [0;32mdocker[0m
+  [0;34mlaunchDir          : [0;32m/Users/arno01m/GitHub_repos/viral_metagenomics_lite_ONT[0m
+  [0;34mworkDir            : [0;32m/Users/arno01m/GitHub_repos/viral_metagenomics_lite_ONT/work[0m
+  [0;34mprojectDir         : [0;32m/Users/arno01m/GitHub_repos/viral_metagenomics_lite_ONT[0m
+  [0;34muserName           : [0;32marno01m[0m
+  [0;34mprofile            : [0;32mdocker[0m
+  [0;34mconfigFiles        : [0;32m/Users/arno01m/GitHub_repos/viral_metagenomics_lite_ONT/nextflow.config[0m
+
+!! Only displaying parameters that differ from the pipeline defaults !!
+-[2m----------------------------------------------------[0m-
+Nov-04 17:06:19.222 [main] INFO  nextflow.Nextflow - 
+Nov-04 17:06:19.230 [main] DEBUG n.v.parameters.ParameterValidator - Starting parameters validation
+Nov-04 17:06:19.311 [main] DEBUG n.v.v.evaluators.SchemaEvaluator - Started validating /Users/arno01m/GitHub_repos/viral_metagenomics_lite_ONT/assets/testdata/ont_mock/samplesheet.csv
+Nov-04 17:06:19.342 [main] DEBUG n.v.v.evaluators.SchemaEvaluator - Validation of file './assets/testdata/ont_mock/samplesheet.csv' passed!
+Nov-04 17:06:19.372 [main] DEBUG n.v.parameters.ParameterValidator - Finishing parameters validation
+Nov-04 17:06:19.429 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withLabel:process_single` matches labels `process_single` for process with name MATTARNOLDBIO_VIRAL_METAGENOMICS_LITE_ONT:VIRAL_METAGENOMICS_LITE_ONT:CAT_FASTQ
+Nov-04 17:06:19.433 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Nov-04 17:06:19.433 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Nov-04 17:06:19.438 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Nov-04 17:06:19.442 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=10; memory=32 GB; capacity=10; pollInterval=100ms; dumpInterval=5m
+Nov-04 17:06:19.443 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Nov-04 17:06:19.465 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'MATTARNOLDBIO_VIRAL_METAGENOMICS_LITE_ONT:VIRAL_METAGENOMICS_LITE_ONT:CAT_FASTQ': maxForks=0; fair=false; array=0
+Nov-04 17:06:19.481 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withLabel:process_high` matches labels `process_high` for process with name MATTARNOLDBIO_VIRAL_METAGENOMICS_LITE_ONT:VIRAL_METAGENOMICS_LITE_ONT:FLYE
+Nov-04 17:06:19.482 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:FLYE` matches process MATTARNOLDBIO_VIRAL_METAGENOMICS_LITE_ONT:VIRAL_METAGENOMICS_LITE_ONT:FLYE
+Nov-04 17:06:19.483 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Nov-04 17:06:19.483 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Nov-04 17:06:19.484 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'MATTARNOLDBIO_VIRAL_METAGENOMICS_LITE_ONT:VIRAL_METAGENOMICS_LITE_ONT:FLYE': maxForks=0; fair=false; array=0
+Nov-04 17:06:19.487 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  _nf_script_62ec842196264a9d: /Users/arno01m/GitHub_repos/viral_metagenomics_lite_ONT/subworkflows/local/utils_nfcore_viral_metagenomics_lite_ont_pipeline/main.nf
+  _nf_script_569d97105cc103bc: /Users/arno01m/GitHub_repos/viral_metagenomics_lite_ONT/subworkflows/nf-core/utils_nextflow_pipeline/main.nf
+  _nf_script_2f8f54c5b7ae3e2e: /Users/arno01m/GitHub_repos/viral_metagenomics_lite_ONT/modules/nf-core/flye/main.nf
+  _nf_script_62c5b7a89b2b2e5a: /Users/arno01m/GitHub_repos/viral_metagenomics_lite_ONT/modules/local/kronatools/importblast/main.nf
+  _nf_script_4767a7b2932ec69f: /Users/arno01m/GitHub_repos/viral_metagenomics_lite_ONT/modules/nf-core/diamond/blastx/main.nf
+  _nf_script_41f3e16de06eaf22: /Users/arno01m/GitHub_repos/viral_metagenomics_lite_ONT/modules/local/filewrangling/filterhitdata/main.nf
+  _nf_script_aeb0cad3e9fce06b: /Users/arno01m/GitHub_repos/viral_metagenomics_lite_ONT/modules/local/extractkronataxonomy/main.nf
+  _nf_script_8deb790a3fee740a: /Users/arno01m/GitHub_repos/viral_metagenomics_lite_ONT/subworkflows/nf-core/utils_nfcore_pipeline/main.nf
+  _nf_script_9fbc3f01e015ab27: /Users/arno01m/GitHub_repos/viral_metagenomics_lite_ONT/workflows/viral_metagenomics_lite_ont.nf
+  _nf_script_fda3096883428d1c: /Users/arno01m/GitHub_repos/viral_metagenomics_lite_ONT/modules/local/filewrangling/extractviruscontigs/main.nf
+  _nf_script_2182cb440e3ea9da: /Users/arno01m/GitHub_repos/viral_metagenomics_lite_ONT/modules/nf-core/multiqc/main.nf
+  _nf_script_f528627ad51c936a: /Users/arno01m/GitHub_repos/viral_metagenomics_lite_ONT/modules/nf-core/medaka/main.nf
+  _nf_script_3eb5c70a6e726f4a: /Users/arno01m/GitHub_repos/viral_metagenomics_lite_ONT/modules/nf-core/cat/fastq/main.nf
+  _nf_script_50d7a84b04552d1e: /Users/arno01m/GitHub_repos/viral_metagenomics_lite_ONT/modules/local/filewrangling/concatenatecontigfiles/main.nf
+  _nf_script_a6348d5b7f231c8d: /Users/arno01m/GitHub_repos/viral_metagenomics_lite_ONT/modules/local/filewrangling/splitblastresult/main.nf
+  _nf_script_99805a8f841457af: /Users/arno01m/GitHub_repos/viral_metagenomics_lite_ONT/subworkflows/nf-core/utils_nfschema_plugin/main.nf
+  _nf_script_b87d8b21f8d513a0: /Users/arno01m/GitHub_repos/viral_metagenomics_lite_ONT/modules/local/filewrangling/concatenatecsvs/main.nf
+  Main: /Users/arno01m/GitHub_repos/viral_metagenomics_lite_ONT/main.nf
+  _nf_script_fa3b601e1a772898: /Users/arno01m/GitHub_repos/viral_metagenomics_lite_ONT/modules/nf-core/fastqc/main.nf
+Nov-04 17:06:19.487 [main] DEBUG nextflow.Session - Session aborted -- Cause: Exception evaluating property 'contigs' for nextflow.script.ChannelOut, Reason: groovy.lang.MissingPropertyException: No such property: contigs for class: groovyx.gpars.dataflow.DataflowBroadcast
+Nov-04 17:06:19.496 [main] DEBUG nextflow.Session - The following nodes are still active:
+  [operator] map
+  [operator] groupTuple
+  [operator] map
+  [operator] map
+  [operator] map
+  [operator] branch
+  [operator] view
+  [operator] view
+  [operator] map
+  [operator] mix
+
+Nov-04 17:06:19.501 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=0; peakCpus=0; peakMemory=0; ]
+Nov-04 17:06:19.545 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Nov-04 17:06:19.700 [main] DEBUG nextflow.trace.ReportObserver - Workflow completed -- rendering execution report
+Nov-04 17:06:20.318 [main] DEBUG nextflow.trace.TimelineObserver - Workflow completed -- rendering execution timeline
+Nov-04 17:06:20.402 [main] DEBUG nextflow.trace.TraceFileObserver - Workflow completed -- saving trace file
+Nov-04 17:06:20.406 [main] ERROR nextflow.cli.Launcher - @unknown
+groovy.lang.MissingPropertyException: Exception evaluating property 'contigs' for nextflow.script.ChannelOut, Reason: groovy.lang.MissingPropertyException: No such property: contigs for class: groovyx.gpars.dataflow.DataflowBroadcast
+	at org.codehaus.groovy.runtime.DefaultGroovyMethods.getAtIterable(DefaultGroovyMethods.java:8649)
+	at org.codehaus.groovy.runtime.DefaultGroovyMethods.getAt(DefaultGroovyMethods.java:8637)
+	at groovy.lang.MetaClassImpl.getProperty(MetaClassImpl.java:2010)
+	at groovy.lang.MetaClassImpl.getProperty(MetaClassImpl.java:3885)
+	at groovy.lang.DelegatingMetaClass.getProperty(DelegatingMetaClass.java:141)
+	at nextflow.script.ChannelOut.getProperty(ChannelOut.groovy:82)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
+	at _nf_script_9fbc3f01e015ab27$_runScript_closure1$_closure2.doCall(_nf_script_9fbc3f01e015ab27:65)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:280)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1009)
+	at groovy.lang.Closure.call(Closure.java:433)
+	at groovy.lang.Closure.call(Closure.java:412)
+	at nextflow.script.WorkflowDef.run0(WorkflowDef.groovy:204)
+	at nextflow.script.WorkflowDef.run(WorkflowDef.groovy:187)
+	at nextflow.script.BindableDef.invoke_a(BindableDef.groovy:51)
+	at nextflow.script.WorkflowBinding.invoke0(WorkflowBinding.groovy:121)
+	at nextflow.script.WorkflowBinding.invokeMethod(WorkflowBinding.groovy:107)
+	at org.codehaus.groovy.runtime.InvokerHelper.invokePogoMethod(InvokerHelper.java:651)
+	at org.codehaus.groovy.runtime.InvokerHelper.invokeMethod(InvokerHelper.java:628)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeOnDelegationObjects(ClosureMetaClass.java:392)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:331)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1009)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
+	at Main$_runScript_closure1$_closure4.doCall(Main:51)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:280)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1009)
+	at groovy.lang.Closure.call(Closure.java:433)
+	at groovy.lang.Closure.call(Closure.java:412)
+	at nextflow.script.WorkflowDef.run0(WorkflowDef.groovy:204)
+	at nextflow.script.WorkflowDef.run(WorkflowDef.groovy:187)
+	at nextflow.script.BindableDef.invoke_a(BindableDef.groovy:51)
+	at nextflow.script.WorkflowBinding.invoke0(WorkflowBinding.groovy:121)
+	at nextflow.script.WorkflowBinding.invokeMethod(WorkflowBinding.groovy:107)
+	at org.codehaus.groovy.runtime.InvokerHelper.invokePogoMethod(InvokerHelper.java:651)
+	at org.codehaus.groovy.runtime.InvokerHelper.invokeMethod(InvokerHelper.java:628)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeOnDelegationObjects(ClosureMetaClass.java:392)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:331)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1009)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
+	at Main$_runScript_closure2$_closure5.doCall(Main:88)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:280)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1009)
+	at groovy.lang.Closure.call(Closure.java:433)
+	at groovy.lang.Closure.call(Closure.java:412)
+	at nextflow.script.WorkflowDef.run0(WorkflowDef.groovy:204)
+	at nextflow.script.WorkflowDef.run(WorkflowDef.groovy:187)
+	at nextflow.script.BindableDef.invoke_a(BindableDef.groovy:51)
+	at nextflow.script.BaseScript.run0(BaseScript.groovy:271)
+	at nextflow.script.BaseScript.run(BaseScript.groovy:282)
+	at nextflow.script.parser.v2.ScriptLoaderV2.runScript(ScriptLoaderV2.groovy:99)
+	at nextflow.script.parser.v2.ScriptLoaderV2.runScript(ScriptLoaderV2.groovy)
+	at nextflow.script.ScriptRunner.run(ScriptRunner.groovy:229)
+	at nextflow.script.ScriptRunner.execute(ScriptRunner.groovy:128)
+	at nextflow.cli.CmdRun.run(CmdRun.groovy:442)
+	at nextflow.cli.Launcher.run(Launcher.groovy:526)
+	at nextflow.cli.Launcher.main(Launcher.groovy:686)

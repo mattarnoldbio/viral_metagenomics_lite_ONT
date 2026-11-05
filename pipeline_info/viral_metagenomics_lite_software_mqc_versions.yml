@@ -1,0 +1,5 @@
+CAT_FASTQ:
+  cat: 9.5
+Workflow:
+    mattarnoldbio/viral_metagenomics_lite_ont: v1.0.0dev
+    Nextflow: 26.04.3
