@@ -49,8 +49,6 @@ workflow VIRAL_METAGENOMICS_LITE_ONT {
             }
             .set { ch_branched }
 
-        ch_branched.multiple.view { entry -> "multiple: ${entry}" }
-        ch_branched.single.view { entry -> "single: ${entry}" }
         
         // ch_branched.view()
 
