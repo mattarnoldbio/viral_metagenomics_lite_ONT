@@ -173,6 +173,10 @@ workflow PIPELINE_COMPLETION {
 //
 def validateInputParameters() {
     genomeExistsError()
+    def missing = ['diamond_db', 'krona_db'].findAll { !params[it] }
+    if (missing) {
+        error("Missing required parameter(s): ${missing.collect { "--${it}" }.join(', ')}")
+    }
 }
 
 //
